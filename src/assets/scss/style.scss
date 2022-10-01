@@ -1,0 +1,23 @@
+$base_size:16;
+
+@mixin fz($px_size) {
+    font-size: calc($px_size/$base_size)+rem;
+}
+$color_dark:#1E2E36;
+$color_lgreen:#44C697;
+$color_white:#fff;
+
+@import "settings";
+@import "common_styles";
+@import "hamburger";
+
+@import "header";
+@import "hamburger-menu";
+@import "pop_up";
+@import "home";
+@import "advantage";
+@import "goods";
+@import "about";
+@import "contacts";
+@import "footer";
+@import "_responsive"

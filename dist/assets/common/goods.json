@@ -1,0 +1,68 @@
+[
+    {
+        "pic": {
+            "bigImage":"bad-1-big.jpg",
+            "image":"bad-1.jpg",
+            "info": "Новинка",
+            "sale": ""
+        },
+        "title":"Ліжко Рамона",
+        "price": "8 999 ГРН",
+        "priceSale": ""
+    },
+    {
+        "pic": {
+            "bigImage":"bad-2-big.jpg",
+            "image":"bad-2.jpg",
+            "info": "ХІт продаж",
+            "sale": "Акція"
+        },
+        "title":"Ліжко Честер",
+        "price": "7 999 ГРН",
+        "priceSale": "8 999 ГРН"
+    },
+    {
+        "pic": {
+            "bigImage":"bad-3-big.jpg",
+            "image":"bad-3.jpg",
+            "info": "",
+            "sale": ""
+        },
+        "title":"Ліжко Венеція Люкс",
+        "price": "8 999 ГРН",
+        "priceSale": ""
+    },
+    {
+        "pic": {
+            "bigImage":"bad-4-big.jpg",
+            "image":"bad-4.jpg",
+            "info": "Новинка",
+            "sale": ""
+        },
+        "title":"Ліжко Імперія",
+        "price": "8 999 ГРН",
+        "priceSale": ""
+    },
+    {
+        "pic": {
+            "bigImage":"bad-5-big.jpg",
+            "image":"bad-5.jpg",
+            "info": "",
+            "sale": ""
+        },
+        "title":"Ліжко Адель",
+        "price": "8 999 ГРН",
+        "priceSale": ""
+    },
+    {
+        "pic": {
+            "bigImage":"bad-6-big.jpg",
+            "image":"bad-6.jpg",
+            "info": "ХІт продаж",
+            "sale": "Акція"
+        },
+        "title":"Ліжко Атлант",
+        "price": "7 999 ГРН",
+        "priceSale": "8 999 ГРН"
+    }
+]

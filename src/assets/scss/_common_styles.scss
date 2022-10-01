@@ -1,0 +1,228 @@
+.btn {
+    font-family: ProximaNova;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    @include fz(18);
+    line-height: 125%;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 46px;
+    color: $color_white;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background-color: $color_lgreen;
+    transition: all .4s ease-in-out;
+    &:hover {
+        background-color: $color_dark;
+    }
+}
+// Gallery(lightGallery) Arrows 
+.lg-actions .lg-prev, .lg-actions .lg-next {
+    @include fz(45);
+    color: rgba(13, 55, 87, 0.9);
+}
+.lg-actions .lg-next {
+    right: 30px;
+}
+.lg-actions .lg-prev {
+    left: 30px;
+}
+// Gallery-counter
+#lg-counter {
+    color: $color_white;
+    @include fz(18);
+}
+// Gallery-button-download-close
+.lg-toolbar .lg-icon {
+    color:rgb(187, 181, 181);
+    @include fz(28);
+}
+// Gallery-title
+.lg-sub-html {
+    @include fz(20);
+}
+
+.goods-window {
+    font-family: ProximaNova;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    @include fz(18);
+    line-height: 125%;
+    text-decoration: none;
+    border: none;
+    padding: 5px 15px;
+    color: $color_white;
+    text-transform: uppercase;
+}
+.goods-title {
+    @include fz(24);
+    font-weight: 700;
+    line-height: 125%;
+    color: $color_dark;
+    text-transform: uppercase;
+}
+
+.title {
+    font-weight: 700;
+    @include fz(48);
+    line-height: 125%;
+    color: $color_dark;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.subtitle {
+    color: #1E2E36;
+    font-weight: 400;
+    @include fz(18);
+    line-height: 125%;
+}
+.bold {
+    font-weight: 700;
+    @include fz(18);
+    line-height: 125%;
+    text-transform: uppercase;
+}
+.icon__telegram, .icon__facebook, .icon__instagram2 {
+    transition: all .3s ease-in-out;
+}
+.media__item_icon {
+    transition: all .3s ease-in-out;
+}
+.media__list {
+    &:hover {
+        .media__item_icon {
+            transform: scale(1.1);
+            .icon__telegram {
+                fill: #0088cc;
+            }
+            .icon__facebook {
+                fill: #2f477a;
+            }
+            .icon__instagram {
+                fill: #e1306c;
+            }
+            .icon__instagram2 {
+                fill: #e1306c;
+            }
+        }
+    }
+}
+
+// Hover-effect "линия" при наведении на текстовый элемент-ссылку
+.line-hover {
+    // Перед испол-м не забываем поставить position: relative; у родителя(li в нашем случае)
+    &:after {             
+        content: '';
+        width: 0;
+        position: absolute;
+        height: 3px;
+        background-color: $color_lgreen;
+        bottom: -3px;
+        left: 0;
+        transition: all .3s ease-in-out;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+.dash__color_blue {
+    color: $color_lgreen;
+}
+// Стрілки слайдера
+.arrow-slider {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color_dark;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+.arrow-prev {
+    &::after {
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-left: 2px solid $color_dark;
+        border-bottom: 2px solid $color_dark;
+        transform: rotate(45deg);
+    }
+}
+.arrow-next {
+    &::after {
+        position: absolute;
+        top: 9px;;
+        right: 11px;
+        content: '';
+        display: block;
+        width: 9px;
+        height: 9px;
+        border-left: 2px solid $color_dark;
+        border-bottom: 2px solid $color_dark;
+        transform: rotate(225deg);
+    }
+}
+
+.name-item {
+    @include fz(16);
+    color: #000;
+    font-weight: 700;
+}
+
+// Випадаюче меню EasyToggler
+.ey-dropdown {
+    position: relative;
+    &__menu {
+        position: absolute;
+        left: 0;
+        text-align: left;
+        background-color: #eaf3f0;
+        padding: 10px 5px;
+        box-shadow: 0 4px 18px rgba(#000, .1);
+        border-radius: 4px;
+        min-width: 280px;
+        transition: all .3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        &:after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            width: 20px;
+            height: 20px;
+            background-color: #eaf3f0;
+            transform: rotate(40deg);
+        }
+        &.open {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(20px);
+        }
+        &-item {
+            display: block;
+            line-height: 1.4;
+            padding: 4px 20px !important;
+            cursor: pointer;
+            color: $color_dark;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $color_lgreen;
+            }
+        }
+    }
+}
+
+
+

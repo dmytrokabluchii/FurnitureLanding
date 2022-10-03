@@ -1,16 +1,25 @@
 <p align="center">
-  <a href="https://gulpjs.com">
-    <img height="130" width="58" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
+  <a href="https://dmytrokabluchii.github.io/FurnitureLanding/">
+    <img height="135" width="67" 
+    src="https://dmytrokabluchii.github.io/FurnitureLanding/assets/images/testing_git.jpg">
   </a>
-  <h3 align="center">The project created in Gulp</h3>
+  <h3 align="center">Furniture-Shop: project created in Gulp</h3>
 </p>
 
-link to example: 
+link to example: https://dmytrokabluchii.github.io/FurnitureLanding/
 
 Single page landing, responsive design.
 
-Technologies used: HTML, SCSS, Java Script, Telegram bot, mySlider, Gulp.
+Technologies used: HTML, SCSS, Pure Java Script, AJAX, Axios, Telegram bot, Swiper.js, Gulp.
 
-Tasks for start project:
-gulp build - create project;
-gulp serve - start project with "live server" in browser
+To start gulp project:
+<br>
+npm install --global gulp-cli
+<br>
+npm init
+<br>
+npm install --save-dev gulp
+<br>
+gulp build (if appear error, to start "gulp build" second time!)
+<br>
+gulp serve

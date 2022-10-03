@@ -63,6 +63,9 @@
         &__menu {
             z-index: 100;
             left: 40%;
+            &:after {
+                left: 25%;
+            }
         }
         &__menu-item {
             color: $color_dark;

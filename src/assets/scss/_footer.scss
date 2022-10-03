@@ -1,27 +1,24 @@
 .footer {
-    width: 100%;
-    &__wrapper {
-        display: flex;
+    background-color: $color_dark;
+    &__bg {
         position: relative;
+        background-position: 100% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     &__container {
-        flex: 0 1 40%;
-        background-color: $color_dark;
-        color: #fff;
-        position: relative;
-    }
-    &__bg {
-        flex: 0 1 60%;
+        color: $color_white;
+        max-width: 830px;
     }
     .arrow__content-link {
         z-index: 9;
         position: absolute;
         top: -4%;
-        left: 3%;
+        left: 1%;
         width: 74px;
         height: 74px;
         .footer__arrow-icon {
-            transition: all .3s ease-in-out;
+            transition: $transition3s;
             &:hover {
                 transform: scale(1.05);
             }
@@ -31,10 +28,11 @@
         padding: 50px 0 50px 0px;
     }
     .bold, .item__map-text, .footer__dev_text {
-        color: #fff;
+        color: $color_white;
     }
     &__column {
         display: flex;
+        padding-bottom: 115px;
         .column-first {
             padding-right: 55px;
         }
@@ -45,7 +43,7 @@
             padding-bottom: 15px;
         }
         .menu__link, .nav__menu_link {
-            transition: all .3s ease-in-out;
+            transition: $transition3s;
             &:hover {
                 color: $color_lgreen;
             }
@@ -61,7 +59,7 @@
         padding: 0 0 30px 28px;
     }
     &__contacts_link {
-        transition: all .2s ease-in-out;
+        transition: $transition2s;
         &:hover {
             font-weight: 700;
         }
@@ -79,23 +77,25 @@
         }
     }
     .media__item_icon {
-        fill: #fff;
+        fill: $color_white;
     }
 
     &__info {
         position: absolute;
-        left: 5%;
+        left: 2%;
         bottom: 15px;
         display: flex;
         justify-content: space-between;
+        gap: 50px;
         line-height: 21px;
+        color: $color_white;
         .footer__company {
             @include fz(14);
             font-weight: 400;
             vertical-align: middle;
         }
         .media__item {
-            transition: all .2s ease-in-out;
+            transition: $transition2s;
             &:hover {
                 .footer__dev_text {
                 font-weight: 700;
@@ -106,6 +106,7 @@
             }
         }
         .footer__dev_text {
+            transition: $transition2s;
             @include fz(14);
             font-weight: 400;
             line-height: 100%;

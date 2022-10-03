@@ -82,6 +82,12 @@
     @include fz(18);
     line-height: 125%;
 }
+.item-title {
+    font-weight: 700;
+    @include fz(36);
+    line-height: 125%;
+    color: $color_dark;
+}
 .bold {
     font-weight: 700;
     @include fz(18);

@@ -1,3 +1,15 @@
+$base_size:16;
+@mixin fz($px_size) {
+    font-size: calc($px_size/$base_size)+rem;
+}
+
+$color_dark:#1E2E36;
+$color_lgreen:#44C697;
+$color_white:#fff;
+$transition2s: all .2s ease-in-out;
+$transition3s: all .3s ease-in-out;
+$transition4s: all .4s ease-in-out;
+
 *,
 *:before,
 *:after {
@@ -38,8 +50,9 @@ a {
 ::-webkit-selection {background: $color_lgreen;}
 
 .container {
-    width: 90%;
+    width: 95.535%;
     max-width: 1818px;
+    // max-width: calc(1903px - 4.465%);
     margin: 0 auto;
 }
 

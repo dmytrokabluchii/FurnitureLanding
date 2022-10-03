@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://dmytrokabluchii.github.io/TestingGulpProject/sitemap.xml
+Sitemap: https://dmytrokabluchii.github.io/FurnitureLanding/sitemap.xml

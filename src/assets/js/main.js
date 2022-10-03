@@ -169,7 +169,7 @@ window.addEventListener('DOMContentLoaded', () => {
           slidesPerGroup: 1,
           spaceBetween: 15
         },
-        765: {
+        699: {
           slidesPerView: 2,
           slidesPerGroup: 2,
         },

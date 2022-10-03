@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://dmytrokabluchii.github.io/FurnitureLanding/">
-    <img height="135" width="67" 
+    <img height="67" width="135" 
     src="https://dmytrokabluchii.github.io/FurnitureLanding/assets/images/testing_git.jpg">
   </a>
   <h3 align="center">Furniture-Shop: project created in Gulp</h3>

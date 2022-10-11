@@ -164,12 +164,8 @@ window.addEventListener('DOMContentLoaded', () => {
         nextEl: '.home__slider-next',
         prevEl: '.home__slider-prev',
       },
-      // autoplay: {
-      //   delay: 5000,
-      // },
     });
     const swiper2 = new Swiper('.swiper2', {
-      // autoHeight: true,
       loop: true,
       rewind: true,
       spaceBetween: 30,
@@ -253,7 +249,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-
   // Create goods-card by axios
   axios.get('assets/common/goods.json')
   .then( (data) => { 
@@ -456,7 +451,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // закрытия модал. окна по ESС. Cобытие keydown срабатывает, когда клавиша была нажата
   document.addEventListener('keydown', (e) => {
     if (e.code === 'Escape' && modalWindow.classList.contains('active')) {
-      closeModal(modalWindow,  y);
+      closeModal(modalWindow, overlay);
     }
   });
 

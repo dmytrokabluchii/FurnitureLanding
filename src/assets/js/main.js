@@ -1,50 +1,62 @@
 window.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById("header_testing"),
-        anchors = document.querySelectorAll(".header__logo_link, .nav__menu_link, .arrow__content-link"),
-        burgerButton = document.querySelector(".hamburger__menu"),
-        mobileMenu = document.querySelector(".mobile__menu"),
-        burgerLinks = document.querySelectorAll(".sidemenu__list_link"),
-        modalWindow = document.querySelector('.modal__callback'),
-        modalField = document.querySelector('.callback__field'),
-        overlay = document.querySelector('.overlay'),
-        btnModalCallbackOpen = document.querySelectorAll('[data-modal]');
+  anchors = document.querySelectorAll(".header__logo_link, .nav__menu_link, .arrow__content-link"),
+  burgerButton = document.querySelector(".hamburger__menu"),
+  mobileMenu = document.querySelector(".mobile__menu"),
+  burgerLinks = document.querySelectorAll(".sidemenu__list_link"),
+  modalWindow = document.querySelector('.modal__callback'),
+  modalField = document.querySelector('.callback__field'),
+  overlay = document.querySelector('.overlay'),
+  btnModalCallbackOpen = document.querySelectorAll('[data-modal]');
 
-        function showSuccessForm() {
-          Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Ваше повідомлення відправлено, чекайте на дзвінок від оператора',
-            showConfirmButton: false,
-            timer: 5000,
-          });
-        }
-        function showInfoValidate() {
-          Swal.fire({
-            position: 'top-end',
-            icon: 'info',
-            title: 'Заповніть усі поля!',
-            showConfirmButton: false,
-            timer: 4000
-          });
-        }
-        function showErrorForm() {
-          Swal.fire({
-            position: 'top-end',
-            icon: 'error',
-            title: 'Помилка на сервері, повідомлення не відправлено',
-            showConfirmButton: false,
-            timer: 4000
-          });
-        }
-        function showError() {
-          Swal.fire({
-            position: 'top-end',
-            icon: 'error',
-            title: 'Помилка на сервері, картки товарів не можуть бути завантажені',
-            showConfirmButton: false,
-            timer: 4000
-          });
-        }
+  // Preloader page
+  function startPreload() {
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout( () => {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }); 
+  }
+  startPreload();
+
+  function showSuccessForm() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Ваше повідомлення відправлено, чекайте на дзвінок від оператора',
+      showConfirmButton: false,
+      timer: 5000,
+    });
+  }
+  function showInfoValidate() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'info',
+      title: 'Заповніть усі поля!',
+      showConfirmButton: false,
+      timer: 4000
+    });
+  }
+  function showErrorForm() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'error',
+      title: 'Помилка на сервері, повідомлення не відправлено',
+      showConfirmButton: false,
+      timer: 4000
+    });
+  }
+  function showError() {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'error',
+      title: 'Помилка на сервері, картки товарів не можуть бути завантажені',
+      showConfirmButton: false,
+      timer: 4000
+    });
+  }
 
   // fix header
   function fixHeader() {

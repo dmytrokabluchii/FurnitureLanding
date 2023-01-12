@@ -627,6 +627,11 @@ $base_size:16;
             }
         }
     }
+    .home {
+        .home-arrow {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width:449px) {
@@ -754,7 +759,6 @@ $base_size:16;
 
 
 
-
 @media screen and (max-height:799px) {
     .home {
         &__wrapper {
@@ -806,6 +810,9 @@ $base_size:16;
             .slider__total {
                 @include fz(22);
             }
+        }
+        .home-arrow {
+            display: none;
         }
     }
 }

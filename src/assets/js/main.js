@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById("header_testing"),
-  anchors = document.querySelectorAll(".header__logo_link, .nav__menu_link, .arrow__content-link"),
+  anchors = document.querySelectorAll(".header__logo_link, .nav__menu_link, .arrow__content-link, .home-arrow"),
   burgerButton = document.querySelector(".hamburger__menu"),
   mobileMenu = document.querySelector(".mobile__menu"),
   burgerLinks = document.querySelectorAll(".sidemenu__list_link"),
